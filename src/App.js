@@ -1,9 +1,9 @@
-import Intro from './intro';
+import Intro from './component/intro';
 
 const App = () => {
   return (
     <div className="app">
-      <Intro prop={'Hello WOrld'}/>
+      <Intro />
     </div>
   );
 }

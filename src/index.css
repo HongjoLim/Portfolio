@@ -55,4 +55,12 @@
 
 .i-right {
   flex: 1;
+  position: relative;
+}
+
+.i-pic {
+  margin-top: 10%;
+  height: 70%;
+  width: 70%;
+  object-fit: contain;
 }

@@ -1,4 +1,6 @@
-const Intro = ({prop}) => {
+import me from '../img/me.png';
+
+const Intro = () => {
     return (
     <div className='i'>
         <div className='i-left'>
@@ -18,7 +20,7 @@ const Intro = ({prop}) => {
             </div>
         </div>
         <div className='i-right'>
-            Right
+            <img className='i-pic' src={me} />
         </div>
     </div>
     );

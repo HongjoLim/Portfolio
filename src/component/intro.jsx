@@ -1,6 +1,21 @@
-import me from '../img/me.png';
+import './intro.css';
+import { SocialIcon } from 'react-social-icons';
+import styled from 'styled-components';
 
 const Intro = () => {
+    
+    const downloadResume = () => {
+        fetch('../docs/Resume.pdf').then(res => {
+            res.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Resume.pdf';
+                alink.click();
+            })
+        })
+    }
+
     return (
     <div className='i'>
         <div className='i-left'>
@@ -10,17 +25,24 @@ const Intro = () => {
                     <div className="i-title-wrapper">
                         <div className="i-title-item">.NET Developer</div>
                         <div className="i-title-item">Web Developer</div>
-                        <div className="i-title-item">Data Analyst</div>
-                        <div className="i-title-item">Python Developer</div>
+                        <div className="i-title-item">Python Programmer</div>
                     </div>
                 </div>
-                <div className="i-desc">
-                Description about me
+                <p className="i-desc">
+                </p>
+                <div className='i-links'>
+                    <div className='i-links-resume'>
+                        <button onClick={downloadResume}>Resume</button>
+                    </div>
+                    <div className='i-links-icons'>
+                        <SocialIcon url='https://www.linkedin.com/in/hongjo-lim-a00562158/' />
+                        <SocialIcon url='https://github.com/HongjoLim' />
+                    </div>
                 </div>
             </div>
         </div>
         <div className='i-right'>
-            <img className='i-pic' src={me} />
+            <div className='i-bg'></div>
         </div>
     </div>
     );

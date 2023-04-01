@@ -18,7 +18,7 @@
     top: 50px;
     left: 50px;
     background-color:darkkhaki;
-    border-radius: 30%;
+    border-radius: 100%;
 }
 
 .a-card {
@@ -32,7 +32,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 30%;
+    border-radius: 100%;
 }
 
 .a-right {

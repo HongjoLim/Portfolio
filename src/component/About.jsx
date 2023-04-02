@@ -16,8 +16,8 @@ const About = () => {
                 <hr/>
                 <p>During 5 years of writing code, I believe everything is possible in programming.</p>
                 <p>I love...</p>
-                <p>making my customers happy with my code</p>
-                <p>helping my colleagues solve their problems.</p>
+                <p>- making my customers happy with my code</p>
+                <p>- helping my colleagues solve their problems.</p>
             </div>
         </div>
 

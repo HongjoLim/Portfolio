@@ -45,6 +45,10 @@
 }
 
 .a-desc {
-    height: 30%;
+    height: 50%;
     width: 100%;
+}
+
+.a-desc p {
+    margin-top: 10px;
 }

@@ -1,11 +1,11 @@
-import './intro.css';
+import './Intro.css';
 import { SocialIcon } from 'react-social-icons';
-import styled from 'styled-components';
+import Resume from '../../data/Resume.pdf'
 
 const Intro = () => {
     
     const downloadResume = () => {
-        fetch('../docs/Resume.pdf').then(res => {
+        fetch(Resume).then(res => {
             res.blob().then(blob => {
                 const fileURL = window.URL.createObjectURL(blob);
                 let alink = document.createElement('a');

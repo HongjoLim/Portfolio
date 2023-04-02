@@ -1,6 +1,7 @@
-import Intro from './component/intro';
-import About from './component/About';
+import Intro from './component/Intro/Intro';
+import About from './component/About/About';
 import Sidebar from './component/layout/Sidebar';
+import Projects from './component/Projects/Projects';
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Sidebar/>
       <Intro />
       <About />
+      <Projects />
     </div>
   );
 }
